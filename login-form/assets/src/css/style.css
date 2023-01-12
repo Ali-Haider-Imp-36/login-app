@@ -1,0 +1,47 @@
+:root {
+    --font-size: 62.5%;
+    --font-family: 'Prosto One', cursive;
+    --primary: #393E46;
+    --secondary: #6D9886;
+    --accent: #F2E7D5;
+    --base: #F7F7F7;
+}
+*, *::before, *::after {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+html {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+}
+body {
+    background-color: var(--primary);
+    color: var(--base);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: calc(var(--font-size) * 6);
+    transition: 1s;
+}
+.user-name, .user-email, .user-passwd {
+    font-size: 1.2rem;
+}
+.link {
+    color: var(--secondary);
+    font-size: 1.5rem;
+}
+.btn {
+    background-color: var(--secondary);
+    color: var(--base);
+    border: none;
+    transition: .4s;
+    padding-inline: 1.4rem;
+    padding-block: 1rem;
+    border-radius: .4rem;
+}
+.btn:hover {
+    background-color: var(--accent);
+    color: var(--primary);
+    cursor: pointer;
+}
